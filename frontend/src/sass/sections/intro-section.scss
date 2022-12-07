@@ -1,0 +1,12 @@
+.intro-section {
+  min-height: calc(100vh - 58px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .intro-video {
+    display: block;
+    width: 100%;
+  }
+}

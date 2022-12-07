@@ -1,0 +1,78 @@
+.automatically-section {
+	padding: 3.2rem 0 6.6rem;
+}
+.automatically {
+	&__wrap {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	&__body {
+		display: flex;
+		flex-direction: column;
+		@media (min-width: 768px) {
+			display: flex;
+			flex-direction: row;
+		}
+	}
+	.section-title {
+		line-height: 1.5;
+		margin: 0;
+	}
+	.section-text {
+        color: $text-autom;
+        line-height: 155%;
+        font-size: 1.8rem;
+        @media (min-width: 768px) {
+		font-weight: 750;
+		font-size: 2.4rem;
+        }
+	}
+    &__intro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 3.2rem;
+    }
+	&__row {
+		margin: 0 1.2rem;
+	}
+	.btn {
+		width: 29.4rem;
+		height: 4rem;
+		margin-bottom: 1.2rem;
+	}
+    .disabled{
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+    }
+	&__text {
+		font-size: 1.4rem;
+		line-height: 150%;
+	}
+	&__warning {
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 1rem;
+		@media (min-width: 768px) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	&__col {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 0.6rem;
+	}
+	&__cost {
+		color: rgba($color-text, 0.5);
+		font-size: 1.4rem;
+		line-height: 150%;
+		margin-left: 0.4rem;
+	}
+}

@@ -1,0 +1,17 @@
+.main-section {
+  padding: 2.4rem 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 136.6rem;
+
+    @media (min-width: 800px) {
+      flex-direction: row;
+    }
+
+    .content {
+      flex: 1;
+    }
+  }
+}

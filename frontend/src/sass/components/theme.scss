@@ -1,0 +1,569 @@
+.theme-dark {
+  .main,
+  .footer,
+  .header {
+    background-color: $base-color;
+  }
+  .section-title {
+    color: $white;
+  }
+  .base-text {
+    color: $white;
+  }
+  .btn.secondary {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: $white;
+  }
+  .header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    .secondary {
+      background-color: $white;
+      color: $base-color;
+    }
+  }
+  .accordions {
+    &__icon {
+      transition: $base-transition;
+      &::before {
+        content: '';
+        position: absolute;
+        border: 0.5rem solid transparent;
+        border-top: 0.6rem solid $white;
+        top: 85%;
+        right: 2.4rem;
+        transition: $base-transition;
+        transform: translateY(-85%) rotate(0);
+      }
+    }
+    &__btn {
+      &.active {
+        .accordions__icon {
+          &::before {
+            transform: translate(8%, -210%);
+            border-bottom: 0.6rem solid $white;
+            border-top: 0;
+          }
+        }
+      }
+    }
+  }
+  .link {
+    svg {
+      path {
+        fill: $bg-icon;
+      }
+    }
+    &:hover {
+      color: $white;
+    }
+  }
+  .switcher {
+    .display__blok {
+      display: none;
+    }
+    .display__none {
+      display: block;
+    }
+    &__dark {
+      color: $text-van;
+      margin-right: 0;
+      @media (min-width: 1024px) {
+        margin-right: 1.2rem;
+        margin-bottom: 0;
+      }
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  .burger {
+    &__btn {
+      span {
+        background-color: $white;
+      }
+    }
+  }
+
+  .logo {
+    svg {
+      path {
+        fill: $white;
+      }
+    }
+  }
+
+  .nav {
+    &__link {
+      color: $text-van;
+
+      &:hover,
+      &.active {
+        color: $white;
+        &::before {
+          border-bottom: 0.2rem solid $white;
+        }
+      }
+    }
+  }
+  .partners-section {
+    background-color: $bg-dark;
+    .partners {
+      &__title {
+        color: $white;
+      }
+      &__img {
+        svg {
+          g {
+            path {
+              fill: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .team-section {
+    .section-title {
+      color: $white;
+    }
+  }
+  .team {
+    &__info {
+      color: $white;
+    }
+    &__wrap {
+      border: 0.1rem solid rgba(255, 255, 255, 0.15);
+    }
+  }
+  .technical {
+    &__link {
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0.2rem 0.2rem 0 rgba(9, 22, 46, 0.1);
+      border-radius: 0.8rem;
+      color: $white;
+    }
+  }
+  .faq-section {
+    background-image: none;
+  }
+  .accordions {
+    &__item {
+      background-color: $base-color;
+      border: 0.1rem solid rgba(255, 255, 255, 0.15);
+    }
+    &__descr {
+      background-color: $base-color;
+      p {
+        color: $white;
+      }
+    }
+    &__btn {
+      h3 {
+        color: $white;
+      }
+    }
+  }
+  .soc-wrap {
+    svg {
+      path {
+        fill: rgba(255, 255, 255, 0.5);
+        fill-opacity: 1;
+      }
+    }
+  }
+  .soc-link {
+    &:hover {
+      svg {
+        path {
+          fill: #f1af3c;
+        }
+      }
+    }
+  }
+  .footer {
+    span {
+      color: $bg-icon;
+    }
+  }
+  .gallery-section,
+  .artist-section {
+    .gallery-title {
+      color: $white;
+    }
+    .main-form__field {
+      background: rgba(255, 255, 255, 0.15);
+      svg {
+        path {
+          fill: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+    .main-form__input {
+      background: none;
+      color: $white;
+    }
+  }
+
+  .main-form {
+    &__input {
+      background: rgba(255, 255, 255, 0.15);
+      color: $white;
+    }
+    &__textarea {
+      color: $white;
+    }
+  }
+
+  .gallery {
+    &__wrap {
+      background-color: $base-color;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    &__username,
+    &__price-sum {
+      color: $white;
+    }
+    &__price,
+    &__color {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    &__login,
+    &__price-img {
+      border-bottom: 0.1rem solid rgba(255, 255, 255, 0.15);
+    }
+    &__price-img {
+      svg {
+        path {
+          fill: $white;
+        }
+      }
+    }
+  }
+  .artists {
+    &__wrap {
+      background-color: $base-color;
+      border: 0.1rem solid rgba(255, 255, 255, 0.15);
+    }
+    &__sum {
+      svg {
+        path {
+          fill: $bg-icon;
+        }
+      }
+      span {
+        color: $bg-icon;
+      }
+    }
+    &__body {
+      color: $white;
+    }
+    &__text {
+      color: $text-van;
+    }
+  }
+  .menu {
+    button {
+      svg {
+        path {
+          fill: $white;
+        }
+      }
+    }
+  }
+  .menu-body {
+    &__name {
+      color: $text-van;
+    }
+    &__btn,
+    .img {
+      svg {
+        path {
+          fill: $white;
+        }
+      }
+    }
+    .bord {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+    &__sum {
+      color: $white;
+    }
+    &__info {
+      color: $white;
+    }
+  }
+  .cabinet-section {
+    .tabs {
+      &__btn {
+        &.active {
+          color: $white;
+          &::before {
+            border-bottom: 0.2rem solid $white;
+          }
+        }
+      }
+    }
+    .gallery {
+      .gallery-img {
+        svg {
+          path {
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
+  .modal {
+    &__wrap {
+      background-color: $base-color;
+    }
+    .main-form {
+      &__title {
+        color: $white;
+      }
+      &__textarea {
+        background-color: rgba(255, 255, 255, 0.15);
+        color: $white;
+      }
+      &__name,
+      &__mail {
+        color: $text-van;
+      }
+      &__profile {
+        border: 0.1rem solid rgba(255, 255, 255, 0.15);
+        background-color: rgba(255, 255, 255, 0.15);
+        label {
+          color: $white;
+        }
+      }
+      &__fil {
+        color: $white;
+      }
+      &__close {
+        svg {
+          path {
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
+  .main-contact {
+    &__img {
+      svg {
+        path {
+          fill: $bg-icon;
+        }
+      }
+    }
+    &__field {
+      background: rgba(255, 255, 255, 0.15);
+      & > span, & > input {
+        color: #fff;
+        background: none;
+      }
+    }
+    &__text {
+      color: $text-van;
+    }
+    &__code {
+      color: $white;
+    }
+  }
+  .buy-wrap {
+    border-left: 0;
+    @media (min-width: 850px) {
+      border-left: 0.1rem solid rgba(255, 255, 255, 0.1);
+    }
+
+    .buy-head {
+      .buy-title {
+        color: $white;
+      }
+      &__text {
+        color: $white;
+      }
+      .price-text,
+      &__text {
+        color: $text-van;
+      }
+      .white-col {
+        color: $white;
+      }
+      &__img {
+        svg {
+          path {
+            fill: $white;
+          }
+        }
+      }
+      &__van {
+        color: $white;
+      }
+    }
+    .buy-body {
+      &__color {
+        color: $text-van;
+      }
+      &__text {
+        color: $white;
+      }
+    }
+    .buy-footer {
+      &__text {
+        color: $white;
+      }
+      &__row {
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        background-color: $base-color;
+      }
+      &__info {
+        svg {
+          path {
+            fill: $white;
+          }
+        }
+      }
+      &__date,
+      &__sum {
+        color: $text-van;
+      }
+      &__van {
+        color: $white;
+      }
+    }
+  }
+
+  .buy-section {
+    .tabs__btn {
+      color: $text-van;
+      &.active {
+        color: $white;
+        &::before {
+          border-bottom: 0.2rem solid $white;
+        }
+      }
+    }
+    .tabs__head {
+      border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  .automatically {
+    &__text {
+      color: $white;
+    }
+  }
+  .generate {
+    &__text {
+      color: $white;
+    }
+    &__code {
+      color: $text-van;
+    }
+  }
+  .special {
+    &__code {
+      color: $text-van;
+    }
+  }
+  .change-section,
+  .tobig-section {
+    .main-form {
+      .main-intro {
+        .main-form__title {
+          color: $white;
+        }
+        .main-text {
+          color: $text-van;
+        }
+      }
+      &__name {
+        color: $text-van;
+      }
+      &__fil {
+        color: $white;
+      }
+      &__textarea,
+      &__profile {
+        background: rgba(255, 255, 255, 0.15);
+      }
+
+      &__profile {
+        background: rgba(255, 255, 255, 0.15);
+        border: 0.1rem solid rgba(255, 255, 255, 0.15);
+
+        p {
+          color: $white;
+        }
+      }
+    }
+  }
+  .tokenomic-footer {
+    background: rgba(255, 255, 255, 0.15);
+
+    &__text {
+      color: $text-van;
+    }
+    &__subtext {
+      color: $white;
+    }
+  }
+
+  .creating {
+    .btn {
+      background-color: $white;
+      color: $base-color;
+    }
+  }
+
+  .switcher__label:before {
+    background-image: url('../images/sun2.svg');
+  }
+
+  .menu-burger {
+    background-color: #09162e;
+  }
+
+  .cabinet-section .tabs__btn:hover {
+    color: #ffffff;
+  }
+
+  .cabinet-section .tabs__head {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .mask {
+    background: rgba(5, 11, 23, 0.9);
+  }
+
+  .chart-circle {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .tokenomic__footer {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .label-info-value {
+    color: #ffffff;
+  }
+
+  .label-info-title {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .tokenomic__subtext {
+    color: #ffffff;
+  }
+
+  .tokenomic__text {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .tabs__subtext {
+    background: rgba(255, 255, 255, 0.15);
+  }
+}

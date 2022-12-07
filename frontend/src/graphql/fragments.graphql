@@ -1,0 +1,107 @@
+fragment saleListing on SaleListingType {
+    listingId
+    price
+    seller
+    buyer
+    closed
+}
+
+fragment profile on ProfileType {
+    id
+    address
+    username
+    bio
+    instagram
+    twitter
+    telegram
+    facebook
+    avatar
+    createdArtworks {
+        ...listArtwork
+    }
+    ownedArtworks {
+        ...listArtwork
+    }
+}
+
+fragment listProfile on ProfileType {
+    id
+    username
+    bio
+    avatar
+}
+
+fragment usernameProfile on ProfileType {
+    id
+    username
+    avatar
+}
+
+fragment artworkEvent on ArtworkEventType {
+    id
+    fromAddress
+    fromAddressData {
+        ...usernameProfile
+    }
+    toAddress
+    toAddressData {
+        ...usernameProfile
+    }
+    datetime
+    event
+    data
+}
+
+fragment artwork on ArtworkType {
+    id
+    uuid
+    title
+    category
+    description
+    artwork {
+        url
+    }
+    royalties
+    minter
+    minterData {
+        ...usernameProfile
+    }
+    owner
+    ownerData {
+        ...usernameProfile
+    }
+    tokenId
+    createdAt
+    events {
+        ...artworkEvent
+    }
+    activeListing {
+        ...saleListing
+    }
+}
+
+fragment listArtwork on ArtworkType {
+    id
+    uuid
+    title
+    minter
+    minterData {
+        ...listProfile
+    }
+    artwork(size: 256) {
+        url
+    }
+    activeListing {
+        ...saleListing
+    }
+}
+
+fragment genProcess on GenerationProcessType {
+    id
+    ejaculationTx
+    ejaculationConfirmed
+    ovulationTx
+    ovulationConfirmed
+    dNA
+    image
+}

@@ -1,0 +1,212 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type ArtistsResponseType {
+    items: [ProfileType!]
+    totalItems: Int
+}
+
+type ArtworkEventType {
+    data: JSONString
+    datetime: DateTime!
+    event: String!
+    fromAddress: String!
+    fromAddressData: ProfileType
+    id: ID!
+    toAddress: String
+    toAddressData: ProfileType
+    tokenId: Int
+}
+
+type ArtworkType {
+    activeListing: SaleListingType
+    artwork(size: Int): UrlField
+    category: AppArtworkCategoryChoices!
+    createdAt: DateTime!
+    description: String!
+    events: [ArtworkEventType!]
+    id: ID!
+    minter: String!
+    minterData: ProfileType
+    owner: String
+    ownerData: ProfileType
+    royalties: Int!
+    title: String!
+    tokenId: Int
+    uuid: UUID!
+}
+
+type CreateGeneratedNFTMutation {
+    args: JSONString
+}
+
+type CreateStandardNFTMutation {
+    args: JSONString
+}
+
+type GalleryResponseType {
+    items: [ArtworkType!]
+    totalItems: Int
+}
+
+type GenerationDNAMutation {
+    ok: Boolean
+}
+
+type GenerationEjaculationMutation {
+    ok: Boolean
+}
+
+type GenerationOvulationMutation {
+    ok: Boolean
+}
+
+type GenerationProcessType {
+    dNA: [Int]
+    ejaculationConfirmed: Boolean
+    ejaculationTx: String!
+    id: ID!
+    image: String
+    ovulationConfirmed: Boolean
+    ovulationTx: String!
+}
+
+type Mutation {
+    createGeneratedNft(input: GeneratedArtworkInputType!, minter: String): CreateGeneratedNFTMutation
+    createStandardNft(input: ArtworkInputType!, minter: String): CreateStandardNFTMutation
+    genDna: GenerationDNAMutation
+    genEjaculation(txid: String): GenerationEjaculationMutation
+    genOvulation(txid: String): GenerationOvulationMutation
+    signIn(nonce: String!, signature: String!): SignInMutation
+    updateProfile(avatar: Upload, input: ProfileInputType!, nonce: String!, removeAvatar: Boolean, signature: String!): UpdateProfileMutation
+}
+
+type ProfileType {
+    address: String!
+    avatar: String
+    bio: String!
+    createdArtworks: [ArtworkType!]
+    facebook: String!
+    id: ID!
+    instagram: String!
+    ownedArtworks: [ArtworkType!]
+    telegram: String!
+    twitter: String!
+    username: String!
+}
+
+type Query {
+    artists(page: Int, q: String): ArtistsResponseType
+    artwork(uuid: String): ArtworkType
+    gallery(category: ArtworkCategory, page: Int, q: String): GalleryResponseType
+    generationProcess: GenerationProcessType
+    nonce: String!
+    profile(search: String!): ProfileType
+    tokenomicsInfo: TokenomicsInfoType
+}
+
+type SaleListingType {
+    buyer: String
+    closed: Boolean!
+    listingId: Int!
+    price: Decimal!
+    seller: String
+}
+
+type SignInMutation {
+    token: String
+}
+
+type TokenomicsInfoType {
+    burnt: Decimal
+    burntDelta: Decimal
+}
+
+type UpdateProfileMutation {
+    profile: ProfileType
+}
+
+type UrlField {
+    url: String
+}
+
+"An enumeration."
+enum AppArtworkCategoryChoices {
+    "Art"
+    ART
+    "Games"
+    GAMES
+    "Music"
+    MUSIC
+    "Photo"
+    PHOTO
+}
+
+"An enumeration."
+enum ArtworkCategory {
+    ART
+    GAMES
+    MUSIC
+    PHOTO
+}
+
+input ArtworkInputType {
+    artwork: Upload
+    category: ArtworkCategory
+    description: String
+    exclusiveInfo: String
+    royalties: Int
+    title: String
+}
+
+input GeneratedArtworkInputType {
+    category: ArtworkCategory
+    description: String
+    exclusiveInfo: String
+    royalties: Int
+    title: String
+}
+
+input ProfileInputType {
+    bio: String
+    facebook: String
+    instagram: String
+    telegram: String
+    twitter: String
+    username: String!
+}
+
+
+"""
+Leverages the internal Python implementation of UUID (uuid.UUID) to provide native UUID objects
+in fields, resolvers and input.
+"""
+scalar UUID
+
+"""
+The `DateTime` scalar type represents a DateTime
+value as specified by
+[iso8601](https://en.wikipedia.org/wiki/ISO_8601).
+"""
+scalar DateTime
+
+"""
+Allows use of a JSON String for input / output from the GraphQL schema.
+
+Use of this type is *not recommended* as you lose the benefits of having a defined, static
+schema (one of the key benefits of GraphQL).
+"""
+scalar JSONString
+
+"The `Decimal` scalar type represents a python Decimal."
+scalar Decimal
+
+"""
+Create scalar that ignores normal serialization/deserialization, since
+that will be handled by the multipart request spec
+"""
+scalar Upload

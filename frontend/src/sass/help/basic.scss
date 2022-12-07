@@ -1,0 +1,132 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+em,
+img,
+strong,
+sub,
+sup,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: $base-font;
+  &.overflow {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 5.8rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 131.8rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    padding: 0 2.4rem;
+  }
+}
+
+.main {
+  min-height: calc(100vh - 124px);
+}
+
+//scroll
+.scroll-wrap::-webkit-scrollbar {
+  width: 3px;
+  background-color: #ccc;
+}
+
+.scroll-wrap::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 2px;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+// media
+// @media (min-width: 768px) {
+// }
+// @media (min-width: 1024px) {
+// }
+// @media (min-width: 1200px) {
+// }
+// @media (min-width: 1360px) {
+// }
+// @media (min-width: 1440px) {
+// }

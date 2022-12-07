@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "vancat"
+version = "0.1.0"
+description = ""
+authors = ["bakatrouble <bakatrouble@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+Django = "^3.2.7"
+django-environ = "^0.7.0"
+django-redis = "^5.0.0"
+django-cors-headers = "^3.8.0"
+django-spa = "^0.3.5"
+django-extensions = "^3.1.3"
+graphene-django = "^3.0.0b7"
+web3 = "^5.23.1"
+graphene-file-upload = "^1.3.0"
+graphql-utilities = "^0.4.0"
+sorl-thumbnail = "^12.7.0"
+Pillow = "^8.3.2"
+graphene-django-pagination = {url = "https://github.com/instruct-br/graphene-django-pagination/archive/master.zip"}
+eth-brownie = "^1.17.1"
+python-magic = "^0.4.24"
+django-dbsettings = "^1.1.0"
+django-constance = "^2.8.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

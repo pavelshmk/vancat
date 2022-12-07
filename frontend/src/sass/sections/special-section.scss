@@ -1,0 +1,46 @@
+.special-section {
+	padding: 0 0 6.9rem 0;
+}
+.special {
+	&__wrap {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__btn {
+		margin-bottom: 1.4rem;
+
+		.primary {
+			width: 29.4rem;
+			height: 4rem;
+		}
+	}
+	&__text,
+	&__code,
+	&__pasword {
+		font-size: 1.4rem;
+		color: $generate;
+		line-height: 150%;
+		margin-bottom: 0.9rem;
+	}
+	&__pasword {
+		color: $special;
+	}
+	&__code {
+		color: $text-autom;
+	}
+	.special-text {
+		font-size: 2.4rem;
+		font-weight: 750;
+		color: $text-autom;
+	}
+	.section-title {
+		margin: 0;
+	}
+}

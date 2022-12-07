@@ -1,0 +1,58 @@
+.partners-section {
+	background-color: $btn-bg;
+}
+.partners {
+	padding: 2.4rem 0;
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		@media (min-width: 768px) {
+			display: flex;
+			justify-content: center;
+            align-items: center;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+	}
+	&__img {
+		width: 24.8rem;
+		margin-bottom: 2rem;
+		flex: none;
+		@media (min-width: 768px) {
+			flex: 1 1 10rem;
+            margin-bottom: 0;
+			& + & {
+				margin: 0 2rem;
+			}
+
+		}
+        svg {
+            width: 100%;
+            display: block;
+            height: 100%;
+            g{
+                path{
+                    fill: $base-color;
+                }
+            }
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+	}
+	&__title {
+		text-align: left;
+		margin-bottom: 1.6rem;
+		font-size: 1.8rem;
+		font-style: normal;
+		color: $dark;
+		@media (min-width: 768px) {
+			font-size: 2.4rem;
+			margin-bottom: 1.6rem;
+			text-align: center;
+		}
+	}
+}

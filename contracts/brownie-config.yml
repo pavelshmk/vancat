@@ -1,0 +1,5 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.3.2
+
+networks:
+  default: binance-smart-chain-test

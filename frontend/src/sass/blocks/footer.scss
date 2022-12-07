@@ -1,0 +1,50 @@
+.footer {
+  padding: 1.6rem 0;
+
+  .container {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  }
+
+  .copyright {
+    color: $dark;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+}
+
+.soc-wrap {
+  margin: 1rem 0;
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+.soc-link {
+  margin: 0 0.8rem;
+  font-size: 24px;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+  &:hover {
+    svg {
+      path {
+        fill: #f4a339;
+        transition: $base-transition;
+      }
+    }
+  }
+}

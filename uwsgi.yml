@@ -1,0 +1,7 @@
+uwsgi:
+  socket: /tmp/vancat.sock
+  module: vancat.wsgi:application
+  chmod-socket: 666
+  master: true
+  processes: 4
+  enable-threads: true

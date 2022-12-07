@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Ata Rounded 25 Thin It';
+    src: url('Ata-Rounded-25-Thin-Italic.woff2') format('woff2'),
+        url('Ata-Rounded-25-Thin-Italic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ata Rounded 25';
+    src: url('Ata-Rounded-25-Thin.woff2') format('woff2'),
+        url('Ata-Rounded-25-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ata Rounded 45';
+    src: url('Ata-Rounded-45-Light.woff2') format('woff2'),
+        url('Ata-Rounded-45-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ata Rounded 75';
+    src: url('Ata-Rounded-75-Bold.woff2') format('woff2'),
+        url('Ata-Rounded-75-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ata Rounded 95 Black It';
+    src: url('Ata-Rounded-95-Black-Italic.woff2') format('woff2'),
+        url('Ata-Rounded-95-Black-Italic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ata Rounded 65 Medium It';
+    src: url('Ata-Rounded-65-Medium-Italic.woff2') format('woff2'),
+        url('Ata-Rounded-65-Medium-Italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ata Rounded 55';
+    src: url('Ata-Rounded-55-Regular.woff2') format('woff2'),
+        url('Ata-Rounded-55-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ata Rounded 35 Extra';
+    src: url('Ata-Rounded-35-Extra-Light.woff2') format('woff2'),
+        url('Ata-Rounded-35-Extra-Light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ata Rounded 85 Extra';
+    src: url('Ata-Rounded-85-Extra-Bold.woff2') format('woff2'),
+        url('Ata-Rounded-85-Extra-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ata Rounded 55';
+    src: url('Ata-Rounded-55-Italic.woff2') format('woff2'),
+        url('Ata-Rounded-55-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ata Rounded 95';
+    src: url('Ata-Rounded-95-Black.woff2') format('woff2'),
+        url('Ata-Rounded-95-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ata Rounded 45 Light It';
+    src: url('Ata-Rounded-45-Light-Italic.woff2') format('woff2'),
+        url('Ata-Rounded-45-Light-Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ata Rounded 85 Extra Bold It';
+    src: url('Ata-Rounded-85-Extra-Bold-Italic.woff2') format('woff2'),
+        url('Ata-Rounded-85-Extra-Bold-Italic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ata Rounded 35 Extra Light It';
+    src: url('Ata-Rounded-35-Extra-Light-Italic.woff2') format('woff2'),
+        url('Ata-Rounded-35-Extra-Light-Italic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ata Rounded 75 Bold It';
+    src: url('Ata-Rounded-75-Bold-Italic.woff2') format('woff2'),
+        url('Ata-Rounded-75-Bold-Italic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ata Rounded 65';
+    src: url('Ata-Rounded-65-Medium.woff2') format('woff2'),
+        url('Ata-Rounded-65-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

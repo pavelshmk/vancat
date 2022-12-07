@@ -1,0 +1,43 @@
+mutation signIn($nonce: String!, $signature: String!) {
+    signIn(nonce: $nonce, signature: $signature) {
+        token
+    }
+}
+
+mutation updateProfile($input: ProfileInputType!, $nonce: String!, $signature: String!, $removeAvatar: Boolean, $avatar: Upload) {
+    updateProfile(input: $input, nonce: $nonce, signature: $signature, removeAvatar: $removeAvatar, avatar: $avatar) {
+        profile {
+            ...profile
+        }
+    }
+}
+
+mutation createStandardNft($input: ArtworkInputType!, $minter: String!) {
+    createStandardNft(input: $input, minter: $minter) {
+        args
+    }
+}
+
+mutation genEjaculation($txid: String!) {
+    genEjaculation(txid: $txid) {
+        ok
+    }
+}
+
+mutation genOvulation($txid: String!) {
+    genOvulation(txid: $txid) {
+        ok
+    }
+}
+
+mutation genDNA {
+    genDna {
+        ok
+    }
+}
+
+mutation createGeneratedNft($input: GeneratedArtworkInputType!, $minter: String!) {
+    createGeneratedNft(input: $input, minter: $minter) {
+        args
+    }
+}

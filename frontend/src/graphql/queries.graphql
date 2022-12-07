@@ -1,0 +1,46 @@
+query getNonce {
+    nonce
+}
+
+query getProfile($query: String!) {
+    profile(search: $query) {
+        ...profile
+    }
+}
+
+query getArtists($q: String, $page: Int) {
+    artists(q: $q, page: $page) {
+        totalItems
+        items {
+            ...listProfile
+        }
+    }
+}
+
+query getGallery($category: ArtworkCategory, $page: Int, $q: String) {
+    gallery(category: $category, page: $page, q: $q) {
+        totalItems
+        items {
+            ...listArtwork
+        }
+    }
+}
+
+query getArtwork($uuid: String!) {
+    artwork(uuid: $uuid) {
+        ...artwork
+    }
+}
+
+query getGenerationProcess {
+    generationProcess {
+        ...genProcess
+    }
+}
+
+query getTokenomicsInfo {
+    tokenomicsInfo {
+        burnt
+        burntDelta
+    }
+}
